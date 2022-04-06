@@ -40,7 +40,7 @@ In Milestone 1, I
 
 In Milestone 2, I
 
-• refactored the crawler to fit into a stream processing system’s basic abstractions;
+• refactored the crawler to fit into a stream processing system's basic abstractions;
 
 • routed documents from the crawler through a stream engine for processing one at a time;
 
