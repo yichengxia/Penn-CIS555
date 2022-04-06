@@ -13,6 +13,7 @@ In Milestone 0, I
 other similar platforms.
 
 In Milestone 1, I
+
 • implemented a simple HTTP server for static content (i.e., files like images, style
 sheets, and HTML pages).
 This web server allows me to get a nice, limited-scale introduction to
@@ -20,6 +21,7 @@ building a server system as it requires careful attention to concurrency issues 
 programming abstractions to support extensibility.
 
 In Milestone 2, I
+
 • expanded the webserver to handle Web service calls.
 Such services were written by attaching handlers (functions called by the Web server) to various routes (URL paths and patterns).
 I implemented a microservices framework that emulates the Spark API.
