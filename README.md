@@ -71,24 +71,21 @@ Demo:
 
 ## HW1: Web and Microservice Framework
 
-This homework is composed with 3 Milestones.
+This project is composed with 3 Milestones.
 
 Milestone 0
 
-• used an existing application server framework, which helped to understand how modern web frameworks operate;
+• Used an existing application server framework, which helped to understand how modern web frameworks operate
 
-• used Spark Java (not Apache Spark), which implemented a similar model to Django (Python), Node.js (JavaScript), and many other similar platforms.
+• Used Spark Java (not Apache Spark), which implemented a similar model to Django (Python), Node.js (JavaScript), and many other similar platforms
 
 Milestone 1
 
-• implemented a simple HTTP server for static content (i.e., files like images, style
-sheets, and HTML pages).
-This web server allows me to get a nice, limited-scale introduction to
-building a server system as it requires careful attention to concurrency issues and well-designed
-programming abstractions to support extensibility.
+• Implemented a simple HTTP server for static content (i.e., files like images, style
+sheets, and HTML pages)
 
 Milestone 2
 
-• expanded the webserver to handle Web service calls.
-Such services were written by attaching handlers (functions called by the Web server) to various routes (URL paths and patterns).
-I implemented a microservices framework that emulates the Spark API.
+• Expanded the webserver to handle Web service calls
+
+• Implemented a microservices framework that emulates the Spark API by attaching handlers (functions called by the Web server) to various routes (URL paths and patterns)
