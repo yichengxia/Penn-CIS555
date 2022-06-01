@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<head>
+  <title>Results</title>
+  <meta charset="utf-8">
+  <title>Penn Google search result page</title>
+  <!--Google Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <!--Font Awesome-->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/resultPage.css">
+</head>
+  <style>
+        .black_overlay{
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=88);
+        }
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 25%;
+            width: 55%;
+            height: 400px;
+            padding: 20px;
+            border: 10px solid orange;
+            background-color: white;
+            z-index:1002;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+  <div class="serp">
+    <div class="header">
+      <div class="search">
+        <form class="form" action="/result" methode="GET">
+          <div>
+            ^&*for_input^&*
+          </div>
+          <button class="button" aria-label="Search" type="submit">
+            <div><i class="fa fa-search "></i></div>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="body">
+      <div class="web">
+        <span class="label">Search Results</span>
+        ^&*for_search^&*
+      </div>
+    </div>
+    ^&*for_page_number^&*
+    <div class="footer">
+      <div class="bottom">
+        <ul class="links">
+          Group www
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

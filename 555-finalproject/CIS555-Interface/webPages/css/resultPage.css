@@ -1,0 +1,165 @@
+.serp {
+  background-color: white;
+  opacity:1;
+  background-attachment:fixed;
+  min-height: 200px;
+  position: relative;
+  width: 100%;
+}
+
+body {
+  background-color: #E6E6FA;
+  opacity:0.7;
+}
+
+.header {
+  opacity:1;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80px;
+  padding: 50px 30px 0;
+  margin: 0;
+}
+
+.form {
+  opacity:1;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  display: flex;
+}
+
+.button {
+  background-color: #D8BFD8;
+  opacity:1;
+  cursor: pointer;
+  flex: 0 0 40px;
+  font-weight: 500;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.body {
+  opacity:1;
+  min-height: 250px;
+  display: block;
+}
+
+
+.web {
+  opacity:1;
+  background-color: inherit;
+  font-size: 14px;
+  padding: 5px 30px 0;
+}
+
+.footer {
+  opacity:1;
+  margin: 30px 0 0;
+  width: 100%;
+}
+
+.bottom {
+  opacity:1;
+  color: var(--text-light-color);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  justify-content: center;
+  padding: 2em 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+.links {
+  font:16px Lobster;
+  opacity:1;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.label {
+  opacity:1;
+  color: #666;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 1em 0;
+}
+
+.query {
+  background: transparent;
+  display: block;
+  font-size: 16px;
+  margin: 0;
+  outline: none;
+  padding: 5px 10px 5px 15px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+.nav .active {
+  font-weight: 700;
+}
+
+.disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.description {
+  color: var(--text-color);
+  line-height: normal;
+}
+
+
+
+
+
+.pagination {
+  /* border: 1px solid green; /* DEV ONLY */
+  margin-top: 40px;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.pagination ul, 
+.pagination ul li {
+  list-style: none;
+  display: inline;
+  padding-left: 16px;
+}
+
+.pagination li {
+  counter-increment: pagination;
+}
+
+.pagination li:hover a {
+  color: var(--pagination-background-color);
+  background-color: var(--pagination-color);
+  border: solid 1px var(--pagination-text-light-color);
+}
+
+.pagination-active{
+  color: var(--pagination-background-color);
+  background-color: var(--pagination-color);
+  border: solid 1px var(--pagination-text-light-color);
+}
+
+.pagination li a {
+  border: solid 1px var(--pagination-border-color);
+  font: Lobster;
+  border-radius: 0.2rem;
+  color: var(--pagination-text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 0.4rem 0.8rem;
+  margin-top: 8px;
+}

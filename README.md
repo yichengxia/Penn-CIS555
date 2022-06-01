@@ -1,18 +1,85 @@
 # Penn-CIS555
-Here are my CIS555 (Internet and Web Systems) coursework projects in 2022 Spring.
+Here are some my CIS555 (Internet and Web Systems) coursework projects in 2022 Spring.
+
+## Final Project: Search Engine
+
+### 1. Group members
+Yicheng Xia: xyicheng@seas.upenn.edu
+
+Yihan Wang: wangyh1@seas.upenn.edu
+
+Xiaoyu Cheng: xc3fe@seas.upenn.edu
+
+Dali Su: dalisu@seas.upenn.edu
+
+### 2. Description of all features implemented
+We implemented crawler, indexer, Pagerank, and web interface. We then integrated these four parts to a complete search engine.
+
+### 3. Extra credit
+N/A
+
+### 4. A list of source files included
+Listed in pom.xml file.
+
+### 5. Detailed instructions on how to configure and run the project
+
+*Crawler*
+```
+cd CIS555-Crawler
+mvn exec:java@Crawler -Dexec.mainClass="edu.upenn.cis.cis555.crawler.CrawlerMain" -Dexec.args="100 N01 localhost"
+```
+where the max number of threads (100) and the node name (N01) can be changed.
+
+Then we can run and see the crawler list interface.
+```
+mvn exec:java@Frontend
+```
+Demo:
+![crawlerlist demo](./555-finalproject/CIS555-Crawler/crawlerlist-demo.png)
+
+*Indexer*
+```
+cd CIS555-Indexer
+mvn exec:java@Indexer
+```
+
+*Pagerank*
+
+Create a jar file 
+```
+cd CIS555-PageRank
+mvn clean compile assembly:single 
+```
+(assuming you already have hadoop installed)
+```
+cd <your hadoop directory>
+bin/hadoop jar <your jar directory and name> <pageRankMain>
+```
+
+*Search engine interface*
+
+```
+cd CIS555-Interface
+mvn exec:java@web
+```
+
+We get the background from random scenery photos every time we open it.
+
+Demo:
+![search engine demo](./555-finalproject/CIS555-Interface/search-engine-demo.png)
+![search engine results demo](./555-finalproject/CIS555-Interface/search-engine-results-demo.png)
 
 ## HW1: Web and Microservice Framework
 
 This homework is composed with 3 Milestones.
 
-In Milestone 0, I
+Milestone 0
 
 • used an existing application server framework, which helped to understand how modern web frameworks operate;
 
-• used Spark Java (not Apache Spark), which implemented a similar model to Django (Python), Node.js (JavaScript), and many
-other similar platforms.
+• used Spark Java (not Apache Spark), which implemented a similar model to Django (Python), Node.js (JavaScript), and many other similar platforms.
 
-In Milestone 1, I
+Milestone 1
 
 • implemented a simple HTTP server for static content (i.e., files like images, style
 sheets, and HTML pages).
@@ -20,31 +87,8 @@ This web server allows me to get a nice, limited-scale introduction to
 building a server system as it requires careful attention to concurrency issues and well-designed
 programming abstractions to support extensibility.
 
-In Milestone 2, I
+Milestone 2
 
 • expanded the webserver to handle Web service calls.
 Such services were written by attaching handlers (functions called by the Web server) to various routes (URL paths and patterns).
 I implemented a microservices framework that emulates the Spark API.
-
-## HW2: Web Crawling and Stream Processing
-
-This homework is composed with 2 Milestones.
-
-In Milestone 1, I
-
-• expanded a dynamic Web application, which runs on the Spark Java framework and allows users to (1) create user identities, (2) define topic-specific "channels" defined by a set of XPath expressions, and (3) to display documents that match a channel;
-
-• implemented and expanded a persistent data store (using Oracle Berkeley DB) to hold retrieved HTML/XML documents and channel definitions;
-
-• fleshed out a crawler that traverses the Web, looking for HTML and XML documents that match one of the patterns.
-
-In Milestone 2, I
-
-• refactored the crawler to fit into a stream processing system's basic abstractions;
-
-• routed documents from the crawler through a stream engine for processing one at a time;
-
-• wrote a state machine-based pattern matcher that determines if an HTML or XML document
-matches one of a set of patterns.
-
-## HW3: MapReduce, Parallelism, and Stream Processing with Punctuation

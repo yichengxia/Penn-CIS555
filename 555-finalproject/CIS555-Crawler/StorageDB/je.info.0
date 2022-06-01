@@ -1,0 +1,7 @@
+2022-05-08 17:16:31.110 UTC SEVERE [./StorageDB] ./StorageDB:FileDeletionDetector exited unexpectedly with exception java.io.IOException: Watch Key corresponding to /Users/yicheng/git/CIS555-Crawler/StorageDB return false when reset. Something abnormal may happen.java.io.IOException: Watch Key corresponding to /Users/yicheng/git/CIS555-Crawler/StorageDB return false when reset. Something abnormal may happen.
+	at com.sleepycat.je.log.FileDeletionDetector.processLogFileDeleteEvents(FileDeletionDetector.java:297)
+	at com.sleepycat.je.log.FileDeletionDetector.access$100(FileDeletionDetector.java:42)
+	at com.sleepycat.je.log.FileDeletionDetector$FileDeleteDetectTask.run(FileDeletionDetector.java:166)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
