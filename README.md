@@ -1,7 +1,7 @@
 # Penn-CIS555
 Here are some my CIS555 (Internet and Web Systems) coursework projects in 2022 Spring.
 
-## Final Project: Search Engine
+## [Final Project: Search Engine](https://github.com/yichengxia/Penn-CIS555/tree/main/555-finalproject)
 
 ### 1. Group members
 Yicheng Xia: xyicheng@seas.upenn.edu
@@ -69,7 +69,7 @@ Demo:
 ![search engine demo](./555-finalproject/CIS555-Interface/search-engine-demo.png)
 ![search engine results demo](./555-finalproject/CIS555-Interface/search-engine-results-demo.png)
 
-## HW1: Web and Microservice Framework
+## [HW1: Web and Microservice Framework](https://github.com/yichengxia/Penn-CIS555/tree/main/555-hw1)
 
 This project is composed with 3 Milestones.
 
